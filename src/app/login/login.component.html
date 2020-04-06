@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-left">
+             
+          <li style="font-size:20px;"><a href="http://localhost:4200/dashboard"><b>Simplicity Training</b></a></li>
+        </ul>
+    </div>
+  </nav>
+
+
+<form class="form-signin" #f="ngForm" (ngSubmit)="signIn(f.value)">
+  <h2 class="form-signin-heading">Enter your Credentials</h2>
+  <h4>Login using: username: kartik@domain.com , password:1234</h4><br/>
+  <br>
+  <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" name="email" ngModel class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" name="password" ngModel class="form-control" placeholder="Password" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button> 
+<br><!--
+  <p class="row sign-up">
+   &emsp; Don&#x27;t have an account?
+  
+   <button type="button" class="btn btn-link"  (click)="signup()">Sign up</button> 
+   <!-- <a href="" id="">Sign up</a>
+  </p>-->
+
+</form>
+

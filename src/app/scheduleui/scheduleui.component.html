@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<br>
+<h4><b>Select course schedule of your choice:</b> </h4><br>
+<div *ngFor="let c of coursescheduleArray" class="col-md-12">
+    <ul>
+        <li>cid:{{c.cid}}</li>
+        <li>sid:{{c.sid}}</li>
+        <li>Course name: {{c.cname}}</li>
+        <li>Instructor name: {{c.instructorname}}</li>
+        <li>Start date: {{c.startdate}}</li>
+        <li>time: {{c.time}}</li>
+        <li>location: {{c.location}}</li>
+    </ul>
+
+    <button style="margin-left:17%;" class="btn btn-sm btn-primary btn" type="confirm eroll" id={{c.sid}} (click)='confirmenroll($event)'>Confirm Enroll</button>
+</div>
+<br>

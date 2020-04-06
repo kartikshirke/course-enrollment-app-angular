@@ -1,0 +1,102 @@
+<h4><b>Upcoming Courses!!</b></h4>
+<br>
+
+<div class="container">
+  
+  <div class="row">
+      
+        <div class="table-responsive">
+        <table class="table table-striped table-hover"align="left">
+          <thead>
+            <tr style="background-color: #4CAF50;">
+              <th>course id</th>
+               <th>Course name</th>
+               <th>Instructor name</th>
+            
+               <th>Location</th>
+               <th>Click to Enroll!</th>
+               
+            
+             </tr>
+          </thead>
+          <tbody>
+            
+           <tr *ngFor="let t of trainings">
+               
+            
+              <td>{{t.cid}}</td>
+              <td>{{t.coursename}}</td>
+              <td>{{t.instructorname}}</td>
+              <td>{{t.location}}</td>
+              <td> <button style="margin-left:17%;"class="btn btn-sm btn-primary btn"  type="course details" id={{t.cid}} (click)='courseDetails($event)'>
+                Enroll</button></td>
+              
+            </tr>
+
+            </tbody>
+            
+        </table>
+      
+      <!--
+        <table id="t2" width="120"  border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr><th style="background-color: #4CAF50;padding:7.355%;padding-bottom:4.5%;padding-top:8.1%;">Enroll Now!</th></tr>
+          <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollui()">Enroll</button></td></tr>
+          <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollux()">Enroll</button></td></tr>
+            <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollba()">Enroll</button></td></tr>
+            <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollpython()">Enroll</button></td></tr>
+            
+          </table>-->
+        
+      </div>
+      
+  </div>
+</div>
+
+
+
+
+
+
+<!--
+<h4><b>Upcoming Courses!!</b></h4>
+<br>
+<table width="492" border="0" align="left" cellpadding="0" cellspacing="0" style=" margin-left:17%;">
+    
+  <tr>
+      <th style="background-color: #4CAF50;">Course Name</th>
+      <th style="background-color: #4CAF50;">Instructor Name</th>
+      <th style="background-color: #4CAF50;">Start Date</th>
+      <th style="background-color: #4CAF50;">Location</th>
+    
+     
+      
+  </tr>
+
+  <tbody>
+    <tr *ngFor="let t of trainings">
+       
+      
+      <td>{{t.coursename}}</td>
+      <td>{{t.instructorname}}</td>
+      <td>{{t.startdate}}</td>
+      <td>{{t.location}}</td>
+      
+     
+    </tr>
+   
+   
+  </tbody>
+   
+  </table>
+&emsp;&emsp;
+  <table id="t2" width="120"  border="0" align="left" cellpadding="0" cellspacing="0">
+    <tr><th style="background-color: #4CAF50;padding:7.355%;padding-bottom:4.5%;padding-top:8.1%;">Enroll Now!</th></tr>
+    <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollui()">Enroll</button></td></tr>
+    <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollux()">Enroll</button></td></tr>
+      <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollba()">Enroll</button></td></tr>
+      <tr><td><button class="btn btn-xs btn-link btn" type="enroll"(click)="enrollpython()">Enroll</button></td></tr>
+      
+    </table>
+
+  -->
+  
